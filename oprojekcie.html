@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>O projekcie</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/fontello.css" type="text/css" />
+
+</head>
+
+<body>
+
+    <div id="wrapper" class="cameleon-bg">
+
+        <div class="container-fluid">
+
+            <header id="headsite" class="flexbox-container-type1">
+
+                <a href="#" class="scrollup">
+                    <img src="img/up.png" width="50px" height="50px" alt="up">
+                </a>
+
+                <div id="editer">
+                    <form>
+                        <div>
+                            <label for="text-color-picker">Kolor tekstu: </label>
+                            <input type="color" name="text-color" id="text-color-picker">
+                        </div>
+                        <div>
+                            <label for="text-color-picker">Kolor tła: </label>
+                            <input type="color" name="background_color" id="background-color-picker">
+                        </div>
+                    </form>
+                </div>
+
+                <div id="title">
+                    <img src="img/logo2.png" width="90" height="90" alt="tujestlogo"> Blog o klubie <span
+                        style="color: gold;">FC BARCELONA</span>
+                </div>
+
+                <div id="clock">12:00:00</div>
+
+                <div style="clear: both;"></div>
+
+            </header>
+            <!--koniec header class flexbox-container-type1-->
+
+            <div class="row">
+
+                <nav id="menu" class="navbar navbar-dark navbar-expand-lg col-sm-12">
+
+                    <a class="navbar-brand" href="index.html">
+                        <img src="img/logo2.png" width="30" height="30" class="d-inline-block mr-1 align-bottom"
+                            alt="tujestlogo"> BarcaBlog.pl
+                    </a>
+
+                    <button class="button-type1 navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false"
+                        aria-label="Navigation switch">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div id="mainmenu" class="collapse navbar-collapse">
+
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">Strona główna <i class="icon-user"></i></a>
+                            </li>
+
+                            <li class="nav-item active">
+                                <a href="oprojekcie.html" class="nav-link">O projekcie <i class="icon-laptop"></i></a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a href="#" id="submenu" class="nav-link dropdown-toggle" data-toggle="dropdown"
+                                    role="button" aria-expanded="false" aria-haspopup="true">Kontakt ze mną <i
+                                        class="icon-mail-alt"></i></a>
+
+                                <div class="dropdown-menu" aria-labelledby="submenu">
+                                    <a href="https://youtube.com" class="dropdown-item" target="_blank">Youtube <i
+                                            class="icon-youtube-squared"></i></a>
+
+                                    <div class="dropdown-divider"></div>
+
+                                    <a href="https://facebook.com" class="dropdown-item" target="_blank">Facebook <i
+                                            class="icon-facebook"></i></a>
+
+                                    <div class="dropdown-divider"></div>
+
+                                    <a href="https://twitter.com" class="dropdown-item" target="_blank">Twitter <i
+                                            class="icon-twitter"></i></a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <form class="form-inline">
+                            <div>
+                                <a href="logowanie.html" class="link-type2">
+                                    <button class="btn btn-light mr-2" type="button">Zaloguj się</button>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="rejestracja.html" class="link-type2">
+                                    <button class="btn btn-light" type="button">Zarejestruj się</button>
+                                </a>
+                            </div>
+                        </form>
+
+                    </div>
+                    <!--koniec div mainmenu-->
+
+                </nav>
+
+                <main class="flexbox-container-type2">
+
+                    <nav id="sidemenu">
+
+                        <div class="optionL"><a href="oklubie.html">O klubie</a></div>
+                        <div class="optionL"><a href="aktualnosci.html">Aktualności</a></div>
+                        <div class="optionL"><a href="sklad.html">Skład</a></div>
+                        <div class="optionL"><a href="historiaklubu.html">Historia klubu</a></div>
+                        <div class="optionL"><a href="legendy.html">Legendy klubowe</a></div>
+                        <div class="optionL"><a href="stadion.html">Stadion</a></div>
+
+                    </nav>
+
+                    <section id="content" class="content-index">
+
+                        <header class="arct-head">
+                            <h3>Kilka słów o projekcie</h3>
+                        </header>
+
+                        <article class="mt-4">
+                            Szanowny Panie,
+                            <div style="text-align: justify;" class="mt-3">
+                                Projekt składa się ze strony głównej, 7 podstron oraz templatki formularza logowania i
+                                rejestracji (bez okodowania go w PHP i połączenia z bazą danych).
+                                Na stronie głównej za pomocą technologii AJAX zawartość strony wczytywana jest z pliku
+                                zewnętrznego text.json, który znajduje się w folderze projektu (aby wczytywanie działało
+                                poprawnie należy uruchomić stronę na lokalnym serwerze np. za pomocą Xamppa lub pluginu
+                                Live Server w VSC).
+                                Podstrony: "O klubie", "Aktualności", "Skład", "Historia klubu", "Legendy klubowe" oraz
+                                "Stadion" zawierają wiadomości na temat klubu FC Barcelona, które pozyskałem ze strony:
+                                <a href="https://www.fcbarca.com/" target="_blank" class="link-type1">FCBarca.com</a>.
+                                Do każdej z tych podstron wraz ze stroną główną podpięty jest plik script.js (do
+                                "Aktualności.html" scriptAktualnosci.js ze względu na skrypt obsługujący przyciski
+                                odtwarzacza wideo, których na reszcie podstron nie ma). Plik script.js zawiera funkcje
+                                obsługujące: zegarek, zmianę koloru tła oraz tekstu na stronie, przyklejane do góry
+                                strony podczas scrollowania menu główne, scroll na górę strony, wczytywanie tekstu z
+                                zewnętrznego pliku, wyświetlanie statystyk tekstu z pola tekstowego. Wszystkie podstrony
+                                są responsywne za pomocą bootstrapowej siatki oraz dla lepszej czytelności strony w
+                                małym oknie wykorzystałem display: flex oraz zmianę położenia bloków flex-direction przy
+                                użyciu @media (max/min-width: Xpx).
+                            </div>
+                            <div style="text-align: right" class="mt-3 pr-4">
+                                Z wyrazami szacunku<br>
+                                Adrian Rodzic 308199
+                            </div>
+                        </article>
+
+                    </section>
+                    <!--koniec section id content-->
+
+                </main>
+                <!--koniec main class flexbox-container-type2-->
+
+            </div>
+            <!--koniec div class row-->
+
+            <footer id="footer">
+
+                <marquee scrollamount="20">
+                    Dziękuję za odwiedzenie mojego bloga! &copy; Adrian Rodzic 2021 - Projektowanie Stron WWW
+                </marquee>
+
+            </footer>
+
+        </div>
+        <!--koniec div class container bootstrap-->
+
+    </div>
+    <!--koniec div id wrapper-->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="jquery-1.11.3.min.js"></script>
+    <script src="jquery.scrollTo.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+Szanowny Panie,
+
+Projekt składa się ze strony głównej, 7 podstron oraz templatki formularza logowania i
+rejestracji (bez okodowania go w PHP i połączenia z bazą danych).
+Na stronie głównej za pomocą technologii AJAX zawartość strony wczytywana jest z pliku
+zewnętrznego text.json, który znajduje się w folderze projektu (aby wczytywanie działało
+poprawnie należy uruchomić stronę na lokalnym serwerze np. za pomocą Xamppa lub pluginu
+Live Server w VSC).
+Podstrony: "O klubie", "Aktualności", "Skład", "Historia klubu", "Legendy klubowe" oraz
+"Stadion" zawierają wiadomości na temat klubu FC Barcelona, które pozyskałem ze strony:
+FCBarca.com.
+Do każdej z tych podstron wraz ze stroną główną podpięty jest plik script.js (do
+"Aktualności.html" scriptAktualnosci.js ze względu na skrypt obsługujący przyciski
+odtwarzacza wideo, których na reszcie podstron nie ma). Plik script.js zawiera funkcje
+obsługujące: zegarek, zmianę koloru tła oraz tekstu na stronie, przyklejane do góry
+strony podczas scrollowania menu główne, scroll na górę strony, wczytywanie tekstu z
+zewnętrznego pliku, wyświetlanie statystyk tekstu z pola tekstowego. Wszystkie podstrony
+są responsywne za pomocą bootstrapowej siatki oraz dla lepszej czytelności strony w
+małym oknie wykorzystałem display: flex oraz zmianę położenia bloków flex-direction przy
+użyciu @media (max/min-width: Xpx).
+
+Z wyrazami szacunku
+Adrian Rodzic 308199

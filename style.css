@@ -1,0 +1,555 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #423b61;
+    background-image: url("img/tlo2.png");
+    background-repeat: repeat;
+    color: white;
+}
+
+#wrapper {
+    padding-top: 10px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*--------------------------------------------------------------------------------------*/
+
+#headsite {
+    text-align: center;
+}
+
+.flexbox-container-type1 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.flexbox-container-type1 div#title {
+    flex-basis: 70%;
+}
+
+@media (max-width: 800px) {
+    .flexbox-container-type1 {
+        flex-direction: column;
+    }
+}
+
+#editer {
+    float: left;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: 600;
+}
+
+input[type=color] {
+    background-color: black;
+    border-radius: 10px;
+}
+
+#title {
+    float: left;
+    font-size: 48px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 138%;
+}
+
+#clock {
+    float: left;
+    font-size: 48px;
+    font-weight: 700;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*--------------------------------------------------------------------------------------*/
+
+#menu {
+    background-color: #221b1b;
+    margin-bottom: 15px;
+    text-align: center;
+    border-top: 2px solid #751b1b;
+    border-bottom: 2px solid #751b1b;
+}
+
+.navbar {
+    min-height: 67px;
+}
+
+.button-type1 {
+    background-color: #1f1c1c;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+
+.button-type1:hover {
+    background-color: crimson;
+    color: gold;
+    font-weight: bold;
+    transform: scale(1.2);
+}
+
+a.link-type2 {
+    display: block;
+    text-decoration: none;
+    color: #030303;
+}
+
+/*--------------------------------------------------------------------------------------*/
+
+.flexbox-container-type2 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.flexbox-container-type2 nav#sidemenu {
+    flex-basis: 15%;
+}
+
+.flexbox-container-type2 section#content {
+    flex-basis: 84%;
+}
+
+@media (max-width: 1100px) {
+    .flexbox-container-type2 {
+        flex-direction: column;
+    }
+
+    .content-index {
+        margin-top: 40px;
+    }
+}
+
+/*--------------------------------------------------------------------------------------*/
+
+#sidemenu {
+    float: left;
+    padding-top: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+.optionL {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 3px dotted #cf201a;
+}
+
+.optionL:first-child {
+    border-top: 3px dotted #cf201a;
+}
+
+.optionL:hover {
+    background-color: #9e1919;
+    opacity: 0.8;
+    box-shadow: 0 0 20px 8px;
+}
+
+.optionL:hover>a {
+    color: gold;
+}
+
+.optionL a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+
+#content {
+    float: left;
+    background-color: #303030;
+    min-height: 690px;
+    padding: 25px;
+    font-size: 24px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    opacity: 0.75;
+    box-shadow: 3px 3px 30px 5px #1f1d1d;
+    border-radius: 5px;
+}
+
+/*----------------------------------------LOGOWANIE I REJESTRACJA----------------------------------------*/
+
+.content-login {
+    width: 100%;
+    border: 1px solid #e7dddd;
+    text-align: center;
+}
+
+.form-type1 {
+    margin-bottom: 15px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.form-registration {
+    padding-right: 105px;
+}
+
+.content-login input {
+    margin-left: 15px;
+    border-radius: 10px;
+}
+
+@media (max-width: 900px) {
+    .content-login input {
+        margin-left: 0;
+    }
+
+    .form-registration {
+        padding-right: 0;
+    }
+
+    .form-type1 {
+        font-size: 26px;
+    }
+
+    .head-form h1 {
+        font-size: 32px;
+    }
+}
+
+.button-type4 {
+    width: 300px;
+    border-radius: 10px;
+    font-weight: 600;
+    background-color: #1f1c1c;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+
+.button-type4:hover {
+    background-color: crimson;
+    color: gold;
+    font-weight: bold;
+    transform: scale(1.2);
+}
+
+/*------------------------------------------AKTUALNOŚCI---------------------------------------------*/
+
+.video-container {
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #e7dddd;
+}
+
+#video {
+    width: 100%;
+    box-shadow: 5px 5px 20px 8px black;
+}
+
+iframe {
+    width: 100%;
+    height: 600px;
+}
+
+#controls {
+    margin-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#controls-fullscreen {
+    margin-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: 24px;
+}
+
+#controls span#video-progress {
+    font-size: 24px;
+}
+
+.button-type3 {
+    background-color: #201e1e;
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+
+.button-type3:hover {
+    background-color: crimson;
+    color: gold;
+    font-weight: 600;
+    transform: scale(1.2);
+}
+
+a.link-type1 {
+    text-decoration: none;
+    color: #fff;
+}
+
+a.link-type1:hover {
+    color: gold;
+}
+
+/*----------------------------------------O KLUBIE--------------------------------------------*/
+
+#js-tools {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    border-top: 2px dashed #cf201a;
+    border-bottom: 2px dashed #cf201a;
+}
+
+@media (min-width: 1550px) {
+    #js-tools {
+        margin-left: 35%;
+        margin-right: 30%;
+    }
+}
+
+@media (max-width: 600px) {
+    #statistics {
+        font-size: 17px;
+        padding-top: 12px;
+    }
+}
+
+#buttons-type2 {
+    float: left;
+    margin-top: 13px;
+}
+
+.button-type2 {
+    background-color: black;
+    height: 35px;
+    font-size: 15px;
+    color: white;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+button#show-stats {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.button-type2:hover {
+    background-color: crimson;
+    color: gold;
+    font-weight: bold;
+    transform: scale(1.2);
+}
+
+textarea#text {
+    background-color: #202020;
+    width: 100%;
+    height: 800px;
+    margin-top: 10px;
+    font-size: 22px;
+    line-height: 170%;
+    border-radius: 5px;
+    font-family: cursive;
+    color: white;
+}
+
+#statistics {
+    float: left;
+    margin-left: 40px;
+}
+
+/*----------------------------------------O KLUBIE-----------------------------------------------*/
+
+.flexbox-container-type3 {
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.flexbox-container-type3 article {
+    flex-basis: 48%;
+}
+
+@media (max-width: 1050px) {
+    .flexbox-container-type3 {
+        flex-direction: column;
+    }
+
+    .arct1 {
+        border-bottom: 2px dashed #9e1919;
+    }
+
+    .arct2 {
+        margin-top: 15px;
+        padding-top: 10px;
+        border-top: 1px solid #e7dddd;
+    }
+
+    article img {
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+
+    footer {
+        display: none;
+    }
+}
+
+/*-----------------------------------------SKŁAD---------------------------------------------*/
+
+header.arct-head {
+    padding-bottom: 10px;
+    text-align: center;
+    color: gold;
+    font-family: cursive;
+    border-bottom: 1px solid #ffffff;
+}
+
+h1 {
+    padding-bottom: 15px;
+    letter-spacing: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: gold;
+    border-bottom: 1px solid #e7dddd;
+}
+
+.img-type1 {
+    border: 5px solid #8d1919;
+    box-shadow: 0 0 20px 8px rgb(255, 0, 0);
+}
+
+.flexbox-container-type4 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+
+.flexbox-container-type4 div.players {
+    flex-basis: 33%;
+}
+
+@media (max-width: 900px) {
+    .flexbox-container-type4 {
+        flex-direction: column;
+    }
+}
+
+h3 {
+    padding-top: 15px;
+    text-align: center;
+    letter-spacing: 5px;
+    font-weight: 400;
+    color: gold;
+    border-top: 1px dashed #d81b1b;
+}
+
+figcaption.player {
+    color: #ffffff;
+    text-decoration: overline;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #e7dddd;
+}
+
+/*----------------------------------------O KLUBIE----------------------------------------------*/
+
+h4 {
+    padding-bottom: 10px;
+    color: gold;
+    font-family: cursive;
+    border-bottom: 1px solid #e7dddd;
+}
+
+article.arct1 {
+    border-bottom: 1px solid #e7dddd;
+}
+
+article img {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.photo1 {
+    transition: all 0.5s ease-in-out;
+}
+
+.photo1:hover {
+    transform: scale(1.08) rotate(2deg);
+}
+
+.photo2 {
+    transition: all 0.5s ease-in-out;
+}
+
+.photo2:hover {
+    transform: skew(-5deg, -5deg);
+}
+
+.photo3 {
+    transition: all 0.75s ease-in-out;
+}
+
+.photo3:hover {
+    transform: scale(1.07);
+}
+
+figcaption {
+    text-align: center;
+    font-family: cursive;
+    color: rgb(96, 117, 233);
+}
+
+@media (max-width: 600px) {
+    figcaption {
+        font-size: 18px;
+    }
+}
+
+/*---------------------------------------STADION-----------------------------------------*/
+
+.img-type2 {
+    border: 5px solid #030303;
+    box-shadow: 0 0 20px 8px rgb(170, 162, 162);
+}
+
+/*--------------------------------------------------------------------------------------*/
+
+#footer {
+    background-image: url("img/tlo2.png");
+    padding-top: 15px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.sticky {
+    width: 1428px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+@media (max-width: 1919px) {
+    .sticky {
+        width: auto;
+    }
+}
+
+.scrollup {
+    text-decoration: none;
+    background: url("img/up.png") no-repeat 0px 0px;
+    position: fixed;
+    right: 10px;
+    bottom: 60px;
+    opacity: 0.6;
+    display: none;
+    z-index: 100;
+}
